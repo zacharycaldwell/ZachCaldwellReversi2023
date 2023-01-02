@@ -18,6 +18,9 @@
 *.zip
 *.tar.gz
 *.rar
+# added to ignore this file that is automatically added when working on a Google Drive
+# 01/02/2023 by cathy.bareiss@betheluniversity.edu
+*.ini
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
