@@ -15,6 +15,14 @@ public class ReversiDriver{
             board = new ReversiBoard();
             char curPlayer;
             int[] curMove;
+            
+            
+            
+            ReversiGui game;
+            game = new ReversiGui(board);
+            game.showGui();
+            
+            
             curMove = new int[2];
             curPlayer = 'b';
             System.out.println("Board as been made");
@@ -22,6 +30,7 @@ public class ReversiDriver{
             while(board.hasMove(curPlayer)){
                 if (curPlayer == 'w'){
                     System.out.println("It is white's turn");
+                    //game.set
                 }
                 else if (curPlayer == 'b'){
                     System.out.println("It is black's turn");

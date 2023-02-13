@@ -10,10 +10,11 @@ public class ReversiBoard extends Board{
         private ReversiPiece[][] pieces;
         private int size;
         private char turn;
+        //public char curPlayer;
         public ReversiBoard(){
             size = super.DEFAULTSIZE;
             pieces = new ReversiPiece[size][size];
-            turn = 'w';
+            turn = 'b';
             blankBoard();//makes board
             //white center pieces
             pieces[3][3].set(1);
@@ -224,7 +225,7 @@ public class ReversiBoard extends Board{
             }
             return false;
        }
-        
+       
         
         
         

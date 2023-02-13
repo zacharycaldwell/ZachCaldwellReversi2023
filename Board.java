@@ -11,9 +11,9 @@
 public class Board {
     // fields
     /** pieces for the board */
-    private Piece[][] pieces;
+    protected Piece[][] pieces;
     /** size of the board */
-    private int size;  // not needed - can go by length but implemented instead
+    protected int size;  // not needed - can go by length but implemented instead
 
     // public class constants about generic games
     /** the default size of the board */
@@ -24,12 +24,14 @@ public class Board {
     public static final int LEGALMOVE = 0;
     /** if the move specified was illegal */
     public static final int BADMOVE = 1;
+    
+    
 
 //Constructors and related methods
     /** create a board of the default size */
     public Board() {
         int row, column;
-
+        
         size = DEFAULTSIZE;
         pieces = new Piece[size][size];
         blankBoard();
